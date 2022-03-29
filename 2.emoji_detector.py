@@ -28,7 +28,7 @@ for n in all_emoji:
         for letter in word:
             word_sum += ord(letter)
 
-    if word_sum >= cool_threshold: # moje da e samo po golqmo
+    if word_sum >= cool_threshold:
         cool_emoji.append(n[0])
 
 
