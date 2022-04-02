@@ -16,7 +16,6 @@ while command != "Sail":
     command = input()
 
 
-
 events = input()
 
 while events != "End":
