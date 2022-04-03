@@ -5,10 +5,9 @@ initial_password = input()
 command = input()
 
 
-
 while command != "Complete":
     explode = command.split(" ")
-    if explode[0] == "Make": #POSSIBLY HAVE TO CHEK IF ISALPHA
+    if explode[0] == "Make":
         index = int(explode[2])
         if explode[1] == "Upper":
             to_be_inserted = initial_password[index].upper()
@@ -22,11 +21,11 @@ while command != "Complete":
     elif explode[0] == "Insert":
         index = int(explode[1])
         char = explode[2]
-        if index in range(len(initial_password)):#COULD BE len(initial_password) + 1
+        if index in range(len(initial_password)):
             initial_password = initial_password[:index] + char + initial_password[index:]
             print(initial_password)
 
-    elif explode[0] == "Replace": #NOT SURE IF I UNDERSTOOD THE TASK HERE
+    elif explode[0] == "Replace":
         char = explode[1]
         value = int(explode[2])
         if char in initial_password:
@@ -62,5 +61,6 @@ while command != "Complete":
         if not is_digit:
             print("Password must consist at least one digit!")
 
-
     command = input()
+
+
